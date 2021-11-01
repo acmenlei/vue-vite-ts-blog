@@ -8,6 +8,9 @@ const articleData = ref<any[]>([]);
 async function getArticleList() {
     const { data }: any = await queryArticleList(articleParams);
     articleData.value = data;
+    return {
+        data, articleData
+    }
 }
 
 getArticleList()

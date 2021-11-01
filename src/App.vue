@@ -2,7 +2,6 @@
 import Index from '@/views//index/index.vue'
 
 </script>
-
 <template>
   <Index />
 </template>
