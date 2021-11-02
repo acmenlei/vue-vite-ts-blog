@@ -14,12 +14,11 @@ service.interceptors.request.use((config: AxiosRequestConfig) => {
 })
 
 service.interceptors.response.use((data: AxiosResponse) => {
-    const resp = data.data;
-    if (resp.code !== 200) {
-        return Promise.reject(resp.msg || "网络出错");
+    const ret = data.data;
+    if (ret.code !== 200) {
+        return Promise.reject(ret.msg || "网络出错");
     } else {
-        // 1. 解构data层 统一处理错误
-        return Promise.resolve(data.data);
+        return ret;
     }
 })
 
