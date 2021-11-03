@@ -1,10 +1,5 @@
-<script setup lang="ts">
-import Home from "@/views/home/index.vue"
-import Article from "@/views/article/index.vue"
-</script>
 <template>
-  <Home />
-  <Article/>
+    <router-view />
 </template>
 
 <style>
@@ -18,4 +13,5 @@ html {
   width: 100%;
   height: 100%;
 }
+
 </style>

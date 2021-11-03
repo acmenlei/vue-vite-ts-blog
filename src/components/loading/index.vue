@@ -1,9 +1,9 @@
 <script setup lang='ts'>
+import { loading } from "./scripts";
 
 </script>
-
 <template>
-    <div class="loading-contain">
+    <div v-if="loading" class="loading-contain">
         <div class="loading">
             <svg
                 version="1.1"
@@ -60,8 +60,8 @@
 .loading-contain {
     width: 100vw;
     height: 100vh;
-    background: rgba($color: #eee, $alpha: .5);
-    opacity: .6;
+    background: rgba($color: #333, $alpha: 0.5);
+    opacity: 0.6;
     z-index: 99999;
     top: 0;
     position: fixed;

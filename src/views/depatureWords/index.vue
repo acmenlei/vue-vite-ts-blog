@@ -1,9 +1,8 @@
 <script setup lang='ts'>
-
 </script>
 
 <template>
-<p>home page</p>
+<p>leavemessage page</p>
 </template>
 
 <style lang='scss' scoped>
