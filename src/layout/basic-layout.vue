@@ -17,6 +17,6 @@ import LoadingComponent from "@/components/loading/index.vue"
 <style lang='scss' scoped>
 blockquote.router-view-contain {
     width: 80%;
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 </style>

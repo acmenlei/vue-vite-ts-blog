@@ -31,6 +31,7 @@ export async function get(url: string, params: any = {}) {
         const ret = await service.get(url, params)
         return Promise.resolve(ret)
     } catch (error) {
+        hideLoading()
         return Promise.reject(error)
     }
 }
@@ -40,6 +41,7 @@ export async function post(url: string, data: any = {}) {
         const ret = await service.post(url, data)
         return Promise.resolve(ret)
     } catch (error) {
+        hideLoading()
         return Promise.reject(error)
     }
 }

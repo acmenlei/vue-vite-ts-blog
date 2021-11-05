@@ -2,7 +2,7 @@ import { createWebHistory, createRouter, RouteRecordRaw } from "vue-router"
 // 1. 根据规则匹配对应的文件
 const routeFiles = import.meta.globEager('./modules/*.ts')
 // 匹配的路由文件
-const routeConfigura: RouteRecordRaw[] = []
+export const routeConfigura: RouteRecordRaw[] = []
 // 默认的路由文件
 const routeDefaultConfigura: RouteRecordRaw[] = [
     {
