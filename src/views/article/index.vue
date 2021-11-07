@@ -4,6 +4,7 @@ import { queryArticleList } from "@/api/modules/article";
 import ArticleCardComponent from "@/components/articleCard/index.vue"
 import ArticleCategorysComponent from "@/components/articleCategorys/index.vue"
 import ArticleTagsComponent from "@/components/articleTags/index.vue"
+import ArticleRecentComponent from "@/components/articleRecent/index.vue"
 
 const articleParams = reactive({ pageNum: 1, pageSize: 4 })
 const articleData = ref<any[]>([]);
@@ -26,6 +27,7 @@ _queryArticleList()
         </div>
         <div class="slider-bar">
             <article-categorys-component />
+            <article-recent-component />
             <article-tags-component />
         </div>
     </div>
@@ -41,8 +43,13 @@ _queryArticleList()
     }
     .slider-bar {
         flex: 2;
-        background: blue;
+        display: flex;
+        flex-direction: column;
         margin-bottom: 1rem;
+        justify-content: flex-start;
+        div {
+            flex: 1;
+        }
     }
 }
 </style>

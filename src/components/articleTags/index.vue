@@ -3,8 +3,13 @@
 </script>
 
 <template>
-    <p>tags</p>
+    <div class="article-tags">
+        标签墙
+    </div>
 </template>
 
 <style lang='scss' scoped>
+.article-tags {
+    background: orange;
+}
 </style>
