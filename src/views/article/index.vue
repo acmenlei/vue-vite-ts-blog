@@ -34,6 +34,7 @@ _queryArticleList()
 </template>
 
 <style lang="scss" scoped>
+$shadow: rgba(0,0,0,.2);
 .creative-center {
     display: flex;
     justify-content: space-between;
@@ -48,7 +49,14 @@ _queryArticleList()
         margin-bottom: 1rem;
         justify-content: flex-start;
         div {
+            padding: .5rem;
             flex: 1;
+            box-shadow: 0 0.1875rem 1.5rem $shadow;
+            margin-top: 1rem;
+            border-radius: 0.375rem;
+            &:nth-child(1) {
+                margin-top: 0;
+            }
         }
     }
 }

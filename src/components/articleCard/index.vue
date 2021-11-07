@@ -45,7 +45,6 @@ $shadow: rgba(0, 0, 0, 0.2);
     flex-direction: row;
     background: $white;
     box-shadow: 0 0.1875rem 1.5rem $shadow;
-    border: 1px solid #eee;
     border-radius: 0.375rem;
     overflow: hidden;
     margin: 1rem 0;

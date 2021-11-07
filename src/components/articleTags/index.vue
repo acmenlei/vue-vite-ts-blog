@@ -1,15 +1,14 @@
 <script setup lang='ts'>
-
+import SliderBarTitleComponent from "@/components/sliderBarTitle/index.vue"
 </script>
 
 <template>
     <div class="article-tags">
-        标签墙
+        <slider-bar-title-component title="标签墙"/>
     </div>
 </template>
 
 <style lang='scss' scoped>
-.article-tags {
-    background: orange;
-}
+// .article-tags {
+// }
 </style>

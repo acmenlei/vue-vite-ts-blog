@@ -3,6 +3,8 @@ import { dyColors } from "@/common/globTs"
 import { queryAndCountCategoryAll } from "@/api/modules/article"
 import { queryAllCategorys } from "@/api/modules/category"
 import { ref } from "@vue/reactivity"
+import SliderBarTitleComponent from "@/components/sliderBarTitle/index.vue"
+
 // 获取文章分类
 const categorys = ref<any[]>([])
 const categoryCounts = ref<{ count: number }[]>([]);
@@ -26,7 +28,7 @@ _queryAllCategorys()
 
 <template>
     <div class="article-category">
-        <div class="category-title">文章分类</div>
+        <slider-bar-title-component title="文章分类" />
         <div class="category-contain">
             <span
                 :style="{ background: `${dyColors[index]}` }"
@@ -41,12 +43,8 @@ _queryAllCategorys()
 </template>
 
 <style lang='scss' scoped>
-$borderColor: orange;
 $categoryCount: orangered;
-.category-title {
-    padding-bottom: 0.2rem;
-    border-bottom: 2px solid $borderColor;
-}
+
 .category-contain {
     display: flex;
     align-items: center;
