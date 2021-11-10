@@ -1,9 +1,13 @@
 import { get, post } from "../http"
 
 export function queryArticleList(data: any) {
-    return post('/article/list', data);
+    return post('/reception/article/list', data);
 }
 
 export function queryAndCountCategoryAll() {
-    return get("/article/getAndCountCategory");
+    return get("/reception/article/getAndCountCategory");
+}
+
+export function queryRecentArticle() {
+    return get("/reception/article/getRecentArticle")
 }

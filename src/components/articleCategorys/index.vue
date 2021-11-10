@@ -51,22 +51,23 @@ $categoryCount: orangered;
     flex-wrap: wrap;
     span {
         color: white;
-        margin: 0.3rem 0.8rem 0.2rem 0;
+        margin: 0.5rem 0.8rem 0.2rem 0;
         cursor: pointer;
         padding: 0.2rem;
         border-radius: 0.2rem;
         font-size: 0.9rem;
         position: relative;
         i {
+            font-style: normal;
             position: absolute;
-            right: -0.5rem;
-            top: -0.3rem;
+            right: -0.6rem;
+            top: -0.4rem;
             display: inline-block;
             background: $categoryCount;
             border-radius: 50%;
             width: 1rem;
             height: 1rem;
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             text-align: center;
         }
     }
