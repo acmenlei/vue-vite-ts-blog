@@ -22,10 +22,6 @@ _queryRecentArticle()
                 <span>{{ item.ll_title }}</span>
                 <span>{{ formatDateTime(item.ll_createdTime) }}</span>
             </li>
-            <li v-for=" item in recentData ">
-                <span>{{ item.ll_title }}</span>
-                <span>{{ formatDateTime(item.ll_createdTime) }}</span>
-            </li>
         </ul>
     </div>
 </template>
