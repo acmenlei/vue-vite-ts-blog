@@ -10,7 +10,7 @@ import PagingComponent from "@/components/paging/index.vue"
 const articleParams = reactive({ pageNum: 1, pageSize: 4 })
 const articleData = ref<any[]>([]);
 const articleTotal = ref<number>(0);
-// 获取文章信息
+// 获取文章信息·
 async function _queryArticleList() {
     const { data, total }: any = await queryArticleList(articleParams);
     articleData.value = data;

@@ -1,11 +1,11 @@
 <script setup lang='ts'>
-
+/* 获取评论信息 */
 </script>
 
 <template>
    <ul id="comments-list" class="comments-list">
       <li>
-         <!-- 单个评论 -->
+         <!-- single comments -->
          <div class="comment-main-level">
             <!-- Avatar -->
             <div class="comment-avatar">
